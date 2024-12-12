@@ -1,5 +1,8 @@
 const myLibrary = [];
 
+const hobbit = new Books("The Hobbit", "J.R.R Tolkien", 295, true);
+const harryPotter = new Books("Harry Potter", "J.K. Rowling", 320, false);
+
 function Books(title, author, pages, read) {
 	this.title = title;
   this.author = author;
@@ -14,7 +17,12 @@ function addBookToLibrary(book) {
     myLibrary.push(book);
 }
 
-function
+//Loops through array of books and displays each book on the page
+function displayBooksOnPage() {
+    console.table(myLibrary);
+}
 
-const hobbit = new Books("The Hobbit", "J.R.R Tolkien", 295, true);
-const harryPotter = new Books("Harry Potter", "J.K. Rowling", 320, false);
+addBookToLibrary(hobbit);
+addBookToLibrary(harryPotter);
+displayBooksOnPage();
+console.log(hobbit.info());
