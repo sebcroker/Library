@@ -1,4 +1,9 @@
 const myLibrary = [];
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", () => {
+    
+})
 
 const hobbit = new Books("The Hobbit", "J.R.R Tolkien", 295, true);
 const harryPotter = new Books("Harry Potter", "J.K. Rowling", 320, false);
