@@ -1,9 +1,15 @@
 const myLibrary = [];
-const btn = document.querySelector("button");
+const openBtn = document.querySelector("#openModal");
+const closeBtn = document.querySelector("#closeModal");
+const modal = document.querySelector("#modal");
 
-btn.addEventListener("click", () => {
-    
-})
+openBtn.addEventListener("click", () => {
+    modal.classList.add("open");
+});
+
+closeBtn.addEventListener("click", () => {
+    modal.classList.remove("open");
+});
 
 const hobbit = new Books("The Hobbit", "J.R.R Tolkien", 295, true);
 const harryPotter = new Books("Harry Potter", "J.K. Rowling", 320, false);

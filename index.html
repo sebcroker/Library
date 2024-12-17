@@ -19,17 +19,19 @@
         <tbody id = "myTable">
         </tbody>
     </table>
+
     <button id = "openModal">
         <h3>Add New Book</h3>
         <img src="./images/Book.jpeg" alt="A black, blue, red and navy blue book stacked on one another" height = 100px width = 100px>
     </button>
 
-    <div class = "modal" id = "modal">
+    <div class = "modal" id = "modal"> <!-- classes to style elements, ID's to target them in JS-->
         <div class = "modal-inner">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <h4>Book Title<input type="text"></h4>
+            <h4>Author<input type="text"></h4>
+            <h4>Pages<input type="text"></h4>
+            <h4>Have you read it?<input type="text"></h4>
+            <button id = "closeModal">Add</button>
         </div>
     </div>
     <script src = "main.js"></script>
